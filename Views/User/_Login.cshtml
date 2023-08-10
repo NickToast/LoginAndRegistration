@@ -1,0 +1,19 @@
+@model LoginUser
+
+<h3 class="text-center mb-4">Login</h3>
+
+<form asp-action="Login" asp-controller="User" method="post" class="shadow p-3 rounded">
+    <div class="mb-3">
+        <label asp-for="LoginEmail" class="my-1">Email</label>
+        <input asp-for="LoginEmail" type="text" class="form-control mb-1">
+        <span asp-validation-for="LoginEmail" class="text-danger fw-bold"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="LoginPassword" class="my-1">Password</label>
+        <input asp-for="LoginPassword" class="form-control mb-1">
+        <span asp-validation-for="LoginPassword" class="text-danger fw-bold"></span>
+    </div>
+    <div class="justify-content-end d-flex">
+        <button class="btn btn-outline-success">Login</button>
+    </div>
+</form>

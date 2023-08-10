@@ -1,0 +1,34 @@
+@model User
+
+<h3 class="text-center mb-4">Registration</h3>
+
+<form asp-action="Register" asp-controller="User" method="post" class="shadow p-3 rounded">
+    <div class="mb-3">
+        <label asp-for="FirstName" class="my-1"></label>
+        <input asp-for="FirstName" type="text" class="form-control mb-1">
+        <span asp-validation-for="FirstName" class="text-danger fw-bold"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="LastName" class="my-1"></label>
+        <input asp-for="LastName" type="text" class="form-control mb-1">
+        <span asp-validation-for="LastName" class="text-danger fw-bold"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="my-1"></label>
+        <input asp-for="Email" type="text" class="form-control mb-1">
+        <span asp-validation-for="Email" class="text-danger fw-bold"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password" class="my-1"></label>
+        <input asp-for="Password" class="form-control mb-1">
+        <span asp-validation-for="Password" class="text-danger fw-bold"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="PasswordConfirm" class="my-1">Confirm Password</label>
+        <input asp-for="PasswordConfirm" class="form-control mb-1">
+        <span asp-validation-for="PasswordConfirm" class="text-danger fw-bold"></span>
+    </div>
+    <div class="justify-content-end d-flex">
+        <button class="btn btn-outline-primary">Register</button>
+        </div>
+</form>
