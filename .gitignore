@@ -2,5 +2,3 @@
 bin
 obj
 Properties
-wwwroot/lib
-appsettings.json
